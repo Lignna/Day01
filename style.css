@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: lightpink;
+    font-family: "Nunito";
+}
+
+.card{
+    margin: 120px auto;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 5%;
+    position: relative;
+}
+
+.card_heart, .card_cart {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.card_cart {
+    left: unset;
+    right: 20px;
+}
+
+.card_img {
+    width: 40%;
+    height: 30%;
+    margin: 20px 100px;
+    transition: 0.5s;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__title, .card__price {
+ font-size: 25px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.card__price {
+    margin-bottom: 10px;
+}
+
+/* .card___size, .card___color {
+display: flex;
+align-items: center;
+}
+
+.card___size span {
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: pink;
+    margin: 1%;
+}
+
+.card___color span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+.card___color--green {
+    background: greenyellow;
+}
+
+.card___color--blue {
+    background: rgb(69, 183, 224);
+}
+
+.card___color--yellow {
+    background: yellow;
+} */
+
+.card___btn {
+    margin-top: 10px;
+}
+
+.card___btn button{
+background: lightblue;
+border: none;
+outline: none;
+padding: 10px 20px;
+margin: 0 28px;
+border-radius: 10px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.25s;
+}
+
+.card___btn button:hover {
+    transform: scale(0.9);
+}
+
+.card:hover .card_img {
+    transform: scale(1.4) ;
+}
+
+.card___size {
+    margin-top: 150px;
+}
+
+.card___size, .card___color, .card___btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card:hover .card___size {
+    visibility: visible;
+    opacity: 100;
+    margin-top: 0px;
+}
+
+.card:hover .card___color {
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card___btn {
+    visibility: visible;
+    opacity: 100;
+}
+
